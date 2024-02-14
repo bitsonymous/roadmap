@@ -1,0 +1,29 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            margin: 200px;
+            overflow: hidden;
+            background-image: url('https://raw.githubusercontent.com/bitsonymous/images/main/20240212_062950.png');
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="bg-cover flex items-center justify-center h-screen">
+    <div id="container" class="text-center flex flex-col items-center">
+        <a href="{% url 's2' %}">
+            <button id="yes-button" class="transform translate-y-[300px] text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">I remember that Promise..</button>
+        </a>
+    </div>
+    
+
+    <script>
+    </script>
+</body>
+</html>

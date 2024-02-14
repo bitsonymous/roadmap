@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Page</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+  <style>
+    body {
+      background-image: url('');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+    }
+    .thanks-text1,
+    .thanks-text {
+      font-size: 36px;
+      font-weight: bold;
+      color: black; /* Set the text color to black */
+      text-align: center;
+      margin: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .thanks-text {
+      font-size: 72px;
+      position: absolute;
+      top: 10%;
+    }
+
+    .custom-img {
+      width: 80%; /* Adjust the width of the image */
+      max-width: 300px; /* Set a max-width to prevent the image from becoming too large */
+      margin-top: 10vh; /* Adjusted margin from the top */
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 20px; /* Adjusted margin for the button container */
+    }
+
+    .custom-btn {
+      margin: 10px;
+      color: black; /* Set the default button text color to black */
+    }
+
+    .custom-btn:hover {
+      background-color: grey; /* Change the button background color on hover to grey */
+      color: black; /* Set the text color on hover to black */
+    }
+  </style>
+</head>
+<body class="flex items-center justify-center h-screen bg-gradient-to-r from-slate-200 to-violet-400 ...">
+
+  <p class="thanks-text">Thank you Geet for promising me <i class="fa fa-heart" aria-hidden="true"></i>
+  </p>
+
+  <img src="https://images.hindustantimes.com/rf/image_size_640x362/HT/p2/2017/10/22/Pictures/_d748dcbc-b6f6-11e7-8276-b04a35b0fb2c.png" alt="Custom Image" class="custom-img">
+  <p class="thanks-text1">So, Ab Kya Karoge ?</p>
+
+  <div class="button-container">
+    <a href="{% url 'dsa' %}">
+      <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Ig, DSA only</button>
+    </a>
+    <a href="{% url 'webdev' %}">
+      <button type="button" class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Nah, Web Dev</button>
+    </a>
+  </div>
+
+  <!-- Bootstrap JS and Popper.js (optional, for Bootstrap functionality) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
