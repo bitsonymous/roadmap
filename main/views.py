@@ -27,3 +27,9 @@ def webdev(request):
 
 def fplaylist(request):
     return render(request, 'fplaylist.html')
+
+def about(request):
+    return render(request, 'about.html')
+
+def oops(request):
+    return render(request, 'oops.html')
